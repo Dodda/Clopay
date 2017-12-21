@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ext="clr-namespace:Clopay.Extensions" x:Class="Clopay.Views.DetailsPage">
+    <ContentPage.Content>
+        <StackLayout Orientation = "Vertical">
+
+            <!--Prepared Tiles on the Details page, for now I am just using the same one, but we can make reusable control-->
+            <StackLayout HeightRequest="200">
+            <Frame CornerRadius="5" OutlineColor="Gray" HeightRequest="200" Padding="0">
+                <StackLayout Orientation="Vertical">
+                    <StackLayout HeightRequest="150" Margin="10, 10, 10, 5">
+                        <Frame CornerRadius="5" OutlineColor="Gray" HeightRequest="150" Padding="0">
+                            <Image Source="{ext:ImageResource Clopay.Images.Item3.png}" WidthRequest="150" />
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                            <Image Margin="10,0,0,0" Source="{ext:ImageResource Clopay.Images.playColored.png}" />
+                            <Image Source="{ext:ImageResource Clopay.Images.ExpandEnable.png}" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                            <Image Source="{ext:ImageResource Clopay.Images.InfoEnable.png}" />
+                            <Image Margin="10,0,10,0" Source="{ext:ImageResource Clopay.Images.SelectEnable.png}" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+            <StackLayout HeightRequest="200">
+            <Frame CornerRadius="5" OutlineColor="Gray" HeightRequest="200" Padding="0">
+                <StackLayout Orientation="Vertical">
+                    <StackLayout HeightRequest="150" Margin="10, 10, 10, 5">
+                        <Frame CornerRadius="5" OutlineColor="Gray" HeightRequest="150" Padding="0">
+                            <Image Source="{ext:ImageResource Clopay.Images.Item4.png}" WidthRequest="150" />
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                            <Image Margin="10,0,0,0" Source="{ext:ImageResource Clopay.Images.playColored.png}" />
+                            <Image Source="{ext:ImageResource Clopay.Images.ExpandDisable.png}" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                            <Image Source="{ext:ImageResource Clopay.Images.InfoDisable.png}" />
+                            <Image Margin="10,0,10,0" Source="{ext:ImageResource Clopay.Images.SelectDisable.png}" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+            <StackLayout HeightRequest="200">
+            <Frame CornerRadius="5" OutlineColor="Gray" HeightRequest="200" Padding="0">
+                <StackLayout Orientation="Vertical">
+                    <StackLayout HeightRequest="150" Margin="10, 10, 10, 5">
+                        <Frame CornerRadius="5" OutlineColor="Gray" HeightRequest="150" Padding="0">
+                            <Image Source="{ext:ImageResource Clopay.Images.Item5.png}" WidthRequest="150" />
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                            <Image Margin="10,0,0,0" Source="{ext:ImageResource Clopay.Images.playColored.png}" />
+                            <Image Source="{ext:ImageResource Clopay.Images.ExpandDisable.png}" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                            <Image Source="{ext:ImageResource Clopay.Images.InfoDisable.png}" />
+                            <Image Margin="10,0,10,0" Source="{ext:ImageResource Clopay.Images.SelectDisable.png}" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

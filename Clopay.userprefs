@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{54139779-EE37-493D-A340-0BA4AF809593}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Clopay.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.515FE3FF-F265-439D-889C-BF9FAE1F2D37">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Clopay.iOS>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Clopay.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+</Properties>

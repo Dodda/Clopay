@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ext="clr-namespace:Clopay.Extensions" x:Class="Clopay.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Image HorizontalOptions="FillAndExpand" Source="{ext:ImageResource Clopay.Images.HomeScreen.png}" HeightRequest="290" />
+
+            <!--Search and Go Button-->
+            <StackLayout Padding="5" Orientation="Horizontal" BackgroundColor="#F17234" HeightRequest="50">
+                <Entry HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="38" Placeholder="Enter Zip Code" />
+                <Image Source="{ext:ImageResource Clopay.Images.GoButton.png}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+
+            <!--Trending section-->
+            <StackLayout Orientation="Horizontal" Padding="10,5,0,0">
+                <Image Source="{ext:ImageResource Clopay.Images.trending.png}" />
+                <Label Text="Trending Now" TextColor="#F17234" />
+            </StackLayout>
+            <StackLayout Orientation ="Horizontal">
+                <Image Source="{ext:ImageResource Clopay.Images.previous.png}" />
+                <StackLayout HorizontalOptions="StartAndExpand">
+                    <Image Source="{ext:ImageResource Clopay.Images.Item1.png}" />
+                    <BoxView Color="Gray" HeightRequest="1" />
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="{ext:ImageResource Clopay.Images.play.png}" />
+                        <Label Text="Learn about garage doors" WidthRequest="100" FontSize="10" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout HorizontalOptions="StartAndExpand">
+                    <Image Source="{ext:ImageResource Clopay.Images.Item2.png}" />
+                    <BoxView Color="Gray" HeightRequest="1" />
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="{ext:ImageResource Clopay.Images.play.png}" />
+                        <Label Text="Learn about intellicore insulation" WidthRequest="100" FontSize="10" />
+                    </StackLayout>
+                </StackLayout>
+                <Image Source="{ext:ImageResource Clopay.Images.next.png}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
